@@ -11,3 +11,311 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.navigationBar{
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+  margin-left: 30px;
+  text-decoration: none;
+  color: black;
+  width: 50%;
+  /* padding: 20px; */
+}
+
+.navStyleALL{
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+  text-decoration: none;
+  color: black;
+  /* text-decoration-line: underline; */
+  font-size: 16px;
+  font-weight: 500;
+}
+.navStyleYour{
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+  text-decoration: none;
+  color: black;
+  /* text-decoration-line: underline; */
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration-style: solid;
+}
+.navStyleBlocked{
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+  text-decoration: none;
+  color: black;
+  /* text-decoration-line: underline; */
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.filt{
+  position: relative;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  right: 20px;
+}
+
+.card{
+  display: flex;
+  align-content: flex-start;
+  background-color: rgb(255, 253, 253);
+  width: 420px;
+  height: 300px;
+  border-color: black;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  border-radius: 5%;
+  margin: 10px;
+  margin-left: 20px;
+}
+
+.filter{
+  display: flex;
+  align-content: flex-start;
+  background-color: rgb(255, 253, 253);
+  width: 420px;
+  height: 300px;
+  /* border-color: black; */
+  /* box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; */
+  border-radius: 5%;
+  margin: 10px;
+  margin-left: 20px;
+}
+
+.filter-title{
+  font-size: 18px;
+  color: black;
+}
+
+.line-1 {
+  height: 1px;
+  width: 400px;
+  background: rgb(94, 104, 104);
+}
+
+.sub{
+  color: rgb(94, 104, 104);
+  font-size: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.tex{
+  color: rgb(94, 104, 104);
+  font-size: 18px;
+}
+.buttonfil{
+  margin-top: 20px;
+  width: 200px;
+  margin-right: 5px;
+}
+.light1{
+  background-color: black;
+  width: 200px;
+
+}
+.cardbody{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: start;
+  justify-content: start;
+  padding: 10px;
+  margin: 20px;
+}
+
+.card-title{
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+
+.butonFilter{
+
+  background-color:black ;
+
+}
+
+Button{
+  color: black;
+}
+
+.title{
+  display: flex;
+  margin-left: 30px;
+}
+
+.name{
+  display: flex;
+  margin-left: 30px;
+  color: rgb(94, 104, 104);
+  font-size: 18px;
+}
+
+.dot{
+  display: flex;
+  position: relative;
+  top: 10px;
+  margin-left: 10px;
+  align-items: center;
+  justify-content: center;
+  height: 5px;
+  width: 5px;
+  background-color:rgb(94, 104, 104);;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.budget{
+  display: flex;
+  margin-left: 10px;
+  color: rgb(94, 104, 104);
+  font-size: 18px;
+  margin-bottom: 20px;
+
+}
+
+.Amount{
+  display: flex;
+  margin-left: 30px;
+  color: rgb(94, 104, 104);
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.freq{
+  display: flex;
+  margin-right: 30px;
+  color: rgb(94, 104, 104);
+  font-size: 16px;
+}
+.spend{
+  display: flex;
+  margin-left: 30px;
+  color: rgb(8, 8, 8);
+  font-size: 16px;
+  margin-bottom: 15px;
+
+}
+.freqMonthly{
+  display: flex;
+  margin-right: 30px;
+  color: rgb(94, 104, 104);
+  font-size: 16px;
+}
+.freqMonthly2{
+  display: flex;
+  margin-right: 50px;
+  margin-left: 18px;
+  color: rgb(94, 104, 104);
+  font-size: 16px;
+}
+.freqMonthly3{
+  display: flex;
+  margin-right: 30px;
+  color: rgb(94, 104, 104);
+  font-size: 16px;
+}
+.colorbar2 {
+  background-color: red;
+  border-radius: 20px;
+  margin-left: 30px;
+  height: 10px;
+  position: relative;
+  &:before {
+    content: "";
+    display: block;
+    width: 33.3333%;
+    position: absolute;
+    top:0;
+    left: 0;
+    background-color: green;
+    border-radius: 20px;
+    height: 100%;
+  }
+  margin-bottom: 10px;
+}
+
+.greendot{
+  display: flex;
+  position: relative;
+  top: 5.7px;
+  /* margin-left: 10px; */
+  align-items: center;
+  justify-content: center;
+  height: 10px;
+  width: 10px;
+  background-color:green;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.balance{
+  display: flex;
+  margin-left: 30px;
+  color: rgb(94, 104, 104);
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.value{
+  margin-left: 200px;
+}
+
+.reddot{
+  display: flex;
+  position: relative;
+  top: 5.7px;
+  /* margin-left: 10px; */
+  align-items: center;
+  justify-content: center;
+  height: 10px;
+  width: 10px;
+  background-color:red;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+}
+.valuebal{
+  margin-left: 190px;
+}
+
+.image{
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  position: relative;
+  height: 35px;
+  width: 35px;
+  left: 300px;
+  top: 40px;
+  
+}
+.main{
+  display: flex;
+  flex-wrap: wrap;
+  width: 350px;
+
+}
+
+.your{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: start;
+  justify-content: start;
+  padding: 10px;
+  margin: 20px;
+}
+
+
+
