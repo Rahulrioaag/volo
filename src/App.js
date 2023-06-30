@@ -4,7 +4,8 @@ import All from './volo/pages/All';
 import Blocked from './volo/pages/Blocked';
 import Your from './volo/pages/Your';
 import NavigationBar from './volo/NavigationBar';
-import BasicPopover from './volo/Filter';
+import Filter from './volo/Filter';
+import SearchComponent from './volo/Search';
 
 function App() {
   return (
@@ -12,7 +13,6 @@ function App() {
        <Router>
        <NavigationBar />
        <hr />
-       <BasicPopover />
        <Routes>
           <Route path="/" element={<All />}/>
           <Route path="/Your" element={<Your />}/>

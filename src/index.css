@@ -132,6 +132,16 @@ code {
   margin: 20px;
 }
 
+.searchCard{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: start;
+  justify-content: start;
+  padding: 10px;
+  margin: 20px;
+}
+
 .card-title{
   display: flex;
   align-items: start;
@@ -225,10 +235,13 @@ Button{
   font-size: 16px;
 }
 .colorbar2 {
+  display: flex;
+  flex-wrap: wrap;
   background-color: red;
   border-radius: 20px;
   margin-left: 30px;
   height: 10px;
+  width: 330px;
   position: relative;
   &:before {
     content: "";

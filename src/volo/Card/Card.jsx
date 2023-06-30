@@ -6,8 +6,8 @@ const Card = ({ item }) => {
             <div className="card ">
                 <span><img className='image' src={item.icon} alt="" /></span>
                 <div className='card-body'>
-                    <h1 className='title'>{item.title}</h1>
-                    <div className='name'>{item.name} <span className='dot'></span> <span className='budget'>Budget</span></div>
+                    <h1 className='title'>{item.name}</h1>
+                    <div className='name'>{item.budget_name} <span className='dot'></span> <span className='budget'>Budget</span></div>
                     <div className='Amount'><span className='freq'>AMOUNT</span><span className='freq'>FREQUENCY</span><span className='freq'>EXPIRY</span></div>
                     <div className='spend' ><span className='freqMonthly'>   {item.spent.value} {item.spent.currency}</span><span className='freqMonthly2'>{item.frequency}</span><span className='freqMonthly3'>{item.expiry}</span></div>
                     <div class="colorbar2"></div>

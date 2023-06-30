@@ -3,9 +3,9 @@ import Popover from '@mui/material/Popover';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Dropdown from 'react-bootstrap/Dropdown';
-import DropdownButton from 'react-bootstrap/DropdownButton';
 
-export default function BasicPopover() {
+
+export default function Filter() {
   const [anchorEl, setAnchorEl] = React.useState(null);
 
   const handleClick = (event) => {
@@ -51,8 +51,9 @@ export default function BasicPopover() {
             </div>
             <div className='line-1'></div>
             <p className='tex' >Cardholder</p>
-            <Drop />
-
+            <div>
+              <Drop />
+            </div>
             <div>
             <button type="button" className="btn btn-danger buttonfil">Apply</button>
             <button type="button" className="btn btn-light buttonfil">Clear</button>
@@ -68,21 +69,18 @@ export default function BasicPopover() {
   );
 }
 
-
-
 function Drop() {
   return (
-    <>
-      <div className="dropdown">
-        <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Select Cardholder
-        </button>
-        <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a className="dropdown-item" href="#">Action</a>
-          <a className="dropdown-item" href="#">Another action</a>
-          <a className="dropdown-item" href="#">Something else here</a>
-        </div>
-      </div>
-    </>
+    <Dropdown>
+      <Dropdown.Toggle className='w-75' variant="light" id="dropdown-basic">
+        Select Cardholder
+      </Dropdown.Toggle>
+
+      <Dropdown.Menu>
+        <Dropdown.Item href="#/action-1">Select Cardholder</Dropdown.Item>
+        <Dropdown.Item href="#/action-2"> Owner-1</Dropdown.Item>
+        <Dropdown.Item href="#/action-3">Owner-2 else</Dropdown.Item>
+      </Dropdown.Menu>
+    </Dropdown>
   );
 }
